@@ -5,7 +5,7 @@ from datetime import datetime
 # ===============================
 # Supabase 接続
 # ===============================
-supabase_url = st.secrets["https://bqyvsdjmvkrhqrqzkwje.supabase.co"]
+supabase_url = st.secrets["sb_publishable_Ayqc92-KV4eNBsupv7gYiQ_mcnIXXT2"]
 supabase_key = st.secrets["eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6IndqaGR1aXNpZnlyeGNsaWdjcGdwIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Njk1NTk4ODAsImV4cCI6MjA4NTEzNTg4MH0.cCvrAG0_xLWlOi_ydZ5Vf6MQB7ddrIssJ7-nXGA1n7k"]
 supabase = create_client(supabase_url, supabase_key)
 
