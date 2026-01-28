@@ -6,7 +6,7 @@ from datetime import datetime
 # Supabase 接続
 # ===============================
 SUPABASE_URL = "https://wjhduisifyrxcligcpgp.supabase.co"
-SUPABASE_KEY = "sb_publishable_Ayqc92-KV4eNBsupv7gYiQ_mcnIXXT2"
+SUPABASE_KEY = "sb_secret_ufuuc9uiRE2b0P5pFpusaw_F3enTUk1"
 supabase = create_client(SUPABASE_URL, SUPABASE_KEY)
 
 # ===============================
