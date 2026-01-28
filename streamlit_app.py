@@ -159,7 +159,7 @@ if st.button("変換する"):
 st.subheader("📊 利用履歴（最新10件）")
 
 response = (
-    supabase.table("app_logs")
+    supabase.table("table1")
     .select("*")
     .order("created_at", desc=True)
     .limit(10)
