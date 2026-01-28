@@ -5,8 +5,8 @@ from datetime import datetime
 # ===============================
 # Supabase 接続
 # ===============================
-supabase_url = st.secrets["https://wjhduisifyrxcligcpgp.supabase.co"]
-supabase_key = st.secrets["sb_publishable_Ayqc92-KV4eNBsupv7gYiQ_mcnIXXT2"]
+SUPABASE_URL = "https://wjhduisifyrxcligcpgp.supabase.co"
+SUPABASE_KEY = "sb_publishable_Ayqc92-KV4eNBsupv7gYiQ_mcnIXXT2"
 supabase = create_client(supabase_url, supabase_key)
 
 # ===============================
