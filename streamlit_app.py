@@ -7,7 +7,7 @@ from datetime import datetime
 # ===============================
 SUPABASE_URL = "https://wjhduisifyrxcligcpgp.supabase.co"
 SUPABASE_KEY = "sb_publishable_Ayqc92-KV4eNBsupv7gYiQ_mcnIXXT2"
-supabase = create_client(supabase_url, supabase_key)
+supabase = create_client(SUPABASE_URL, SUPABASE_KEY)
 
 # ===============================
 # ページ設定
