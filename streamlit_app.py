@@ -144,7 +144,7 @@ if st.button("変換する"):
         output_text = convert_text(input_text)
 
         # Supabase に保存
-        supabase.table("app_logs").insert({
+        supabase.table("table1").insert({
             "input_text": input_text,
             "output_text": output_text,
             "created_at": datetime.now().isoformat()
