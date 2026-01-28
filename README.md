@@ -1,19 +1,49 @@
-# 🎈 Blank app template
+# 語彙変換アプリ（Streamlit × Supabase）
 
-A simple Streamlit app template for you to modify!
+## 概要
+本アプリは、日本語文章中に含まれる攻撃的・不適切とされる語彙を検出し、  
+より穏やかで適切な表現へ自動的に変換する Web アプリケーションです。
 
-[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://blank-app-template.streamlit.app/)
+日本語特有の表記ゆれ（ひらがな・カタカナ・漢字）にも対応しており、  
+文章の意味を大きく変えずに語調を和らげることができます。
 
-### How to run it on your own machine
+また、アプリの利用履歴（変換前・変換後の文章）は  
+Supabase（PostgreSQL）上のデータベースに保存され、  
+アプリが再起動・休止してもデータが失われません。
 
-1. Install the requirements
+---
 
-   ```
-   $ pip install -r requirements.txt
-   ```
+## 主な機能
 
-2. Run the app
+- 日本語文章の入力
+- 攻撃的語彙の自動検出
+- 穏当な語彙への変換
+- ひらがな・カタカナ・漢字の表記ゆれ対応
+- 変換履歴のデータベース保存（Supabase）
+- Web ブラウザから利用可能（Streamlit）
 
-   ```
-   $ streamlit run streamlit_app.py
-   ```
+---
+
+## 使用技術
+
+- **Python**
+- **Streamlit**（Web アプリ UI）
+- **Supabase**（PostgreSQL データベース）
+- **PostgREST API**
+
+---
+
+## アプリの使い方
+
+1. アプリにアクセスします
+2. テキストエリアに文章を入力します
+3. 変換ボタンを押すと、語彙変換後の文章が表示されます
+4. 入力内容と変換結果は自動的にデータベースへ保存されます
+
+---
+
+## アプリURL（試用はこちら）
+
+👉 **https://blank-app-q2c7lncte7d.streamlit.app/**  
+（Streamlit Cloud）
+
