@@ -145,7 +145,7 @@ if st.button("変換する"):
         output_text = convert_text(input_text)
 
         # Supabase に保存
-        supabase.table("table1").insert({
+        supabase.table("app_logs").insert({
             "input_text": input_text,
             "output_text": output_text,
             "created_at": datetime.now().isoformat()
@@ -160,7 +160,7 @@ if st.button("変換する"):
 st.subheader("📊 利用履歴（最新10件）")
 
 response = (
-    supabase.table("table1")
+    supabase.table("app_logs")
     .select("*")
     .order("created_at", desc=True)
     .limit(10)
