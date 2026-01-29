@@ -6,8 +6,8 @@ from datetime import datetime
 # Supabase 接続
 # ===============================
 
-url = st.secrets["https://bqyvsdjmvkrhqrqzkwje.supabase.co"]
-key = st.secrets["eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6IndqaGR1aXNpZnlyeGNsaWdjcGdwIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Njk1NTk4ODAsImV4cCI6MjA4NTEzNTg4MH0.cCvrAG0_xLWlOi_ydZ5Vf6MQB7ddrIssJ7-nXGA1n7k"]
+url = st.secrets["SUPABASE_URL"]
+key = st.secrets["SUPABASE_KEY"]
 
 supabase = create_client(url, key)
 # ===============================
